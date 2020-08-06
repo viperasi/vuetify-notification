@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-snackbar v-model="showValue" :bottom="y === 'bottom'" :left="x === 'left'" :multi-line=" mode === 'multi-line'"
-      :right=" x === 'right'" :timeout=" timeout" :top=" y === 'top'" :color=" color" :vertical=" mode === 'vertical'">
+      :right=" x === 'right'" :timeout=" timeout" :top=" y === 'top'" :color='color' :vertical=" mode === 'vertical'">
       {{ text }}
       <v-btn text :color="closeBtnColor" v-if=" showCloseBtn" @click="_setClose">
         关闭
